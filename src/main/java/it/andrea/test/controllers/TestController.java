@@ -20,7 +20,7 @@ public class TestController {
 
     @Autowired
     private RestTemplate restTemplate;
-    @Value("${be.url}")
+    @Value("${be.url:url}")
     private String beUrl;
 
     @GetMapping(value = "/fe")
